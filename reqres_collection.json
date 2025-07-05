@@ -1,0 +1,81 @@
+{
+    "info": {
+        "name": "ReqRes User APIs",
+        "_postman_id": "abcd1234-reqres-sample",
+        "description": "A sample Postman collection to test basic ReqRes API endpoints.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET User",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://reqres.in/api/users/2",
+                    "protocol": "https",
+                    "host": [
+                        "reqres",
+                        "in"
+                    ],
+                    "path": [
+                        "api",
+                        "users",
+                        "2"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "POST Create User",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"Kalyan\",\n  \"job\": \"Tester\"\n}"
+                },
+                "url": {
+                    "raw": "https://reqres.in/api/users",
+                    "protocol": "https",
+                    "host": [
+                        "reqres",
+                        "in"
+                    ],
+                    "path": [
+                        "api",
+                        "users"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE User",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "https://reqres.in/api/users/2",
+                    "protocol": "https",
+                    "host": [
+                        "reqres",
+                        "in"
+                    ],
+                    "path": [
+                        "api",
+                        "users",
+                        "2"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
